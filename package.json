@@ -1,0 +1,27 @@
+{
+  "name": "reassign",
+  "version": "0.0.0",
+  "description": "reassign keeping the original object reference",
+  "main": "lib/reassign.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Casper Beyer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasharray/reassign.js.git"
+  },
+  "keywords": [
+    "assign",
+    "reassign"
+  ],
+  "bugs": {
+    "url": "https://github.com/hasharray/reassign.js/issues"
+  },
+  "homepage": "https://github.com/hasharray/reassign.js"
+}
