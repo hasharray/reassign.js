@@ -1,6 +1,6 @@
 {
   "name": "reassign",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "reassign keeping the original object reference",
   "main": "lib/reassign.js",
   "directories": {
