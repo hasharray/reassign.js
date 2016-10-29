@@ -1,6 +1,6 @@
 {
   "name": "Reassign.js",
   "tagline": "reassign objects keeping the original reference",
-  "body": "## Install\r\n\r\n```console\r\nnpm install reassign\r\n```\r\n\r\n## License\r\n\r\nMIT\r\n",
+  "body": "Reassign an object, copies all properties from source objects into the target object, removing any properties not present on a source object.\r\n\r\n## Example\r\n```js\r\nvar assert = require('assert');\r\nvar reassign = require('assign');\r\n\r\nvar target = {\r\n  a: true,\r\n  b: true,\r\n  c: true\r\n};\r\n\r\nvar source1 = {\r\n  c: false,\r\n  d: false\r\n};\r\n\r\nvar source2 = {\r\n  e: false\r\n};\r\n\r\nvar assigned = assign(target, source1, sourceN);\r\nassert.equal(target, assigned);\r\nassert.deepEqual(assigned, {\r\n  c: false,\r\n  d: false,\r\n  e: false\r\n});\r\n```\r\n\r\n## Install\r\n\r\n```console\r\nnpm install reassign\r\n```\r\n\r\n## License\r\n\r\nMIT\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }

@@ -28,7 +28,38 @@
         </ul>
       </header>
       <section>
-        <h2>
+        <p>Reassign an object, copies all properties from source objects into the target object, removing any properties not present on a source object.</p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> assert <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>assert<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> reassign <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>assign<span class="pl-pds">'</span></span>);
+
+<span class="pl-k">var</span> target <span class="pl-k">=</span> {
+  a<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+  b<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+  c<span class="pl-k">:</span> <span class="pl-c1">true</span>
+};
+
+<span class="pl-k">var</span> source1 <span class="pl-k">=</span> {
+  c<span class="pl-k">:</span> <span class="pl-c1">false</span>,
+  d<span class="pl-k">:</span> <span class="pl-c1">false</span>
+};
+
+<span class="pl-k">var</span> source2 <span class="pl-k">=</span> {
+  e<span class="pl-k">:</span> <span class="pl-c1">false</span>
+};
+
+<span class="pl-k">var</span> assigned <span class="pl-k">=</span> <span class="pl-en">assign</span>(target, source1, sourceN);
+<span class="pl-smi">assert</span>.<span class="pl-en">equal</span>(target, assigned);
+<span class="pl-smi">assert</span>.<span class="pl-en">deepEqual</span>(assigned, {
+  c<span class="pl-k">:</span> <span class="pl-c1">false</span>,
+  d<span class="pl-k">:</span> <span class="pl-c1">false</span>,
+  e<span class="pl-k">:</span> <span class="pl-c1">false</span>
+});</pre></div>
+
+<h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <div class="highlight highlight-text-shell-session"><pre><span class="pl-mo">npm install reassign</span></pre></div>
