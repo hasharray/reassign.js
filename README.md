@@ -1,4 +1,4 @@
-# Reassign.js - reassign keeping the original object reference.
+# Reassign.js - reassign an object
 
 Reassign an object, copies all properties from source objects into the target object, removing any properties not present on a source object.
 
