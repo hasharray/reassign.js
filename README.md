@@ -5,7 +5,7 @@ Reassign an object, copies all properties from source objects into the target ob
 ## Example
 ```js
 var assert = require('assert');
-var reassign = require('assign');
+var assign = require('reassign');
 
 var target = {
   a: true,
